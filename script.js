@@ -38,9 +38,7 @@ const listen = () => {
   rec.start();
 };
 
-window.onload = () => {
-  speechSynthesis.onvoiceschanged = () => {
-    speak("Welcome to First Aid Assistant. Say your emergency.");
-    setTimeout(listen, 4000);
-  };
+document.getElementById("start-btn").onclick = () => {
+  speak("Welcome to First Aid Assistant. Please say your emergency.");
+  setTimeout(listen, 3000);
 };

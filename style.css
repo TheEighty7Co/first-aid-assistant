@@ -1,25 +1,75 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #fff;
-  color: #222;
-  padding: 1em;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #212121;
+}
+header {
+  background-color: #D32F2F;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1em;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }
 h1 {
-  color: #D32F2F;
+  font-size: 1.4em;
+  margin: 0;
 }
-#log {
-  margin-top: 1em;
+main {
   padding: 1em;
-  border: 1px solid #ddd;
-  max-height: 60vh;
-  overflow-y: auto;
-  background: #f9f9f9;
+}
+#start-btn {
+  background-color: #D32F2F;
+  color: white;
+  border: none;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.hint {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+.chat-log {
+  border: 1px solid #ccc;
+  padding: 1em;
+  height: 300px;
+  overflow-y: scroll;
+  background: #fafafa;
+  border-radius: 8px;
+}
+.chat-log p {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border-radius: 12px;
+  max-width: 80%;
 }
 .bot {
-  color: #D32F2F;
-  font-style: italic;
+  background: #D32F2F;
+  color: white;
+  align-self: flex-start;
 }
 .user {
-  font-weight: bold;
-  margin-top: 0.5em;
+  background: #e0e0e0;
+  align-self: flex-end;
+  text-align: right;
+}
+.mic {
+  font-size: 2em;
+  text-align: center;
+  animation: pulse 2s infinite;
+  margin-top: 1em;
+}
+@keyframes pulse {
+  0% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+  100% { opacity: 0.4; transform: scale(1); }
 }

@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>First Aid Assistant</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <img src="icon.png" alt="App Logo" class="logo" />
+    <h1>First Aid Assistant</h1>
+  </header>
   <main>
-    <h1>🩺 First Aid Assistant</h1>
-    <div id="log"></div>
+    <button id="start-btn">🔴 Start Emergency Mode</button>
+    <p class="hint">🧠 Say your emergency: "stroke", "CPR", "bleeding", "burn", or "choking".</p>
+    <div id="log" class="chat-log"></div>
+    <div class="mic" id="mic-icon">🎤</div>
   </main>
   <script src="script.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('Service Worker Registered'));
+      navigator.serviceWorker.register('service-worker.js');
     }
   </script>
 </body>

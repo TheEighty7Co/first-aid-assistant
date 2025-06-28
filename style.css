@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  padding: 1em;
+}
+h1 {
+  color: #D32F2F;
+}
+#log {
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  max-height: 60vh;
+  overflow-y: auto;
+  background: #f9f9f9;
+}
+.bot {
+  color: #D32F2F;
+  font-style: italic;
+}
+.user {
+  font-weight: bold;
+  margin-top: 0.5em;
+}

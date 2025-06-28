@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff;
+  background: #fff url('background_logo.png') no-repeat center center fixed;
+  background-size: 60%;
   color: #212121;
 }
 header {
@@ -43,7 +44,7 @@ main {
   padding: 1em;
   height: 300px;
   overflow-y: scroll;
-  background: #fafafa;
+  background: rgba(255, 255, 255, 0.85);
   border-radius: 8px;
 }
 .chat-log p {
